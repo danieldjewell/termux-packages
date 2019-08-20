@@ -1,6 +1,7 @@
---- ../libqalculate-2.0.0/libqalculate/util.cc	2017-08-27 20:37:20.000000000 +0200
-+++ ./libqalculate/util.cc	2017-08-30 21:33:31.235484528 +0200
-@@ -771,8 +771,8 @@
+diff -Naru libqalculate-3.3.0/libqalculate/util.cc libqalculate/libqalculate/util.cc
+--- libqalculate-3.3.0/libqalculate/util.cc	2019-07-21 00:29:17.000000000 -0700
++++ libqalculate/libqalculate/util.cc	2019-08-20 13:24:45.421054061 -0700
+@@ -898,8 +898,8 @@
  }
  
  void Thread::enableAsynchronousCancel() {
@@ -11,7 +12,7 @@
  }
  
  void *Thread::doRun(void *data) {
-@@ -795,7 +795,8 @@
+@@ -922,7 +922,8 @@
  
  bool Thread::cancel() {
  	if(!running) return true;
